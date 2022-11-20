@@ -12,7 +12,7 @@ export const Container = styled.footer`
     }
     .img-contact{
         padding: 0.5rem;
-        transition: filter 2s;
+        transition: filter 0.2s;
         &:hover {
             filter: brightness(0.6);
         }
@@ -20,7 +20,6 @@ export const Container = styled.footer`
     .img-logo{
         max-width: 5rem;
         padding-right: 1rem;
-        transition: filter 0.2s;
     }
     h3{
         width: 5rem;
