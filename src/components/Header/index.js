@@ -9,9 +9,14 @@ export function Header(){
                 <a href="index.html">
                 <img src={logoImg} alt="Logo SPPARK" />
                 </a>
-                <p>R. Sebastião Pereira, 31 - Centro, Piedade - SP<br/><br/>
-                    Tel: (15) 11111-1111
-                </p>
+                <a className='a-maps' href="https://goo.gl/maps/JHLEazWbzBzWMqSe6">
+                    R. Sebastião Pereira, 31 - Centro, Piedade - SP
+                </a>
+                <br/>
+                <br/>
+                <a className='a-phone' href="tel:+5515991167252">
+                    Tel: (15) 99116-7252
+                </a> 
                 <img src={flagImg} alt="flag" />
             </Content>
         </Container>

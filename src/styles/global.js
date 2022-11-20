@@ -25,10 +25,10 @@ export const GlobalStyle = createGlobalStyle`
         }
 }
 
-    body{
-        background: var(--black);
-        color: var(--white);
-    }
+body{
+    background: var(--black);
+    color: var(--white);
+}
 
     body, button, input, textarea{
         font-weight: 400;

@@ -8,18 +8,29 @@ export const Container = styled.footer`
     img{
         float: left;
         max-width: 2rem;
+        padding-bottom: 2rem;
     }
     .img-contact{
         padding: 0.5rem;
+        transition: filter 2s;
+        &:hover {
+            filter: brightness(0.6);
+        }
     }
     .img-logo{
         max-width: 5rem;
         padding-right: 1rem;
+        transition: filter 0.2s;
     }
     h3{
         width: 5rem;
         padding: 0.5rem;
         padding-left: 2rem; 
+    }
+    .a-maps{
+        color: var(--white);
+        text-decoration:none;
+        &:hover {text-decoration:underline}
     }
     `
 

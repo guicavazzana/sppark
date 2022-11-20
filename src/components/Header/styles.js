@@ -24,12 +24,18 @@ export const Content = styled.div`
     vertical-align: middle;
     }
 
-    p{
+    a{
         color: var(--white);
         font-style: italic;
         font-weight: bold;
         font-size: 1rem;
         text-align: center;
+        text-decoration: none;
     }
-    
+    .a-maps{
+        &:hover {text-decoration: underline};
+    }
+    .a-phone{
+        &:hover {text-decoration: underline};
+    }
 `
