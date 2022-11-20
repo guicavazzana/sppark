@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header } from './components/Header'
+import { GlobalStyle } from './styles/global'
+import { CarouselHome } from './components/Carousel'
+import { PostHeader } from './components/PostHeader'
+import { Label } from './components/Label'
+import { Motivos } from './components/Motivos'
+import { Footer } from './components/Footer'
+import { Description } from './components/Description'
+import { Copyright } from './components/Copyright'
 
-function App() {
+
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+    <Header />
 
-export default App;
+    <PostHeader />
+
+    <CarouselHome/>
+
+    <Label />
+
+    <Motivos />
+
+    <Description />
+
+    <Footer />
+
+    <Copyright />
+
+    <GlobalStyle />
+    </>
+  )
+}
