@@ -2,13 +2,34 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     background: var(--dark-gray);
-    width: 100%;
-    height: 10rem;
-    margin-top: 1.5rem;
+    width: 100vw;
+    min-height: 10rem;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    hr{
+        width: 0.1rem;
+        background-color: var(--black);
+        height: 70%;
+        border: none;
+        margin-top: 1.5rem;
+    }
+    @media (max-width: 500px) {
+        display: block;
+        hr{
+        background-color: var(--black);
+        border: none;
+        height: 0.2rem;
+        width: 100%;
+    }
+    }
+    /*margin-top: 1.5rem;
     text-align: center;
     justify-content: center;
     color: var(--white);
     display: flex;
+    
     
     .titulo-label{
         font-weight: bold;
@@ -22,23 +43,14 @@ export const Container = styled.div`
 
     p{
         font-size: 16px;
-    }
+    } */
     
-    ul{
-        list-style-type:none;
-        
-        li{
-            float: left;
-            padding-right: 2rem;
-            padding-left: 2rem;
-            height: 5rem;
-            width: 20rem;
-            
-        }
-    }
 `
 
 export const Content = styled.div`
-    display: table;
-    align-self: center;
+    display: flex;
+    @media (max-width: 500px) {
+        display: block;
+    }
+
 `
