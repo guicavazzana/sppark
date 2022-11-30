@@ -4,7 +4,7 @@ export const DivGlobal = styled.div`
     display: flex;
     `
 export const Container = styled.div`
-    padding: 1.2rem;
+    padding: 1rem;
 
 `
 export const Imagem = styled.img`

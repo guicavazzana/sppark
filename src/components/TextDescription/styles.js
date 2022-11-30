@@ -5,7 +5,7 @@ export const Container = styled.div`
     `
 export const Title = styled.h3`
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
     `
 export const SubTitle = styled.h4`
     font-weight: bold;

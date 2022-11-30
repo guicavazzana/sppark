@@ -4,8 +4,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
     background: var(--dark-gray);
     text-align: center;
-    padding: 1.5rem 3rem 1.5rem 3rem;
-    border: 1px solid red;
+    padding: 1rem 3rem 1.5rem 3rem;
 
     div{
         display: inline-block;
