@@ -2,6 +2,9 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     align-items: center;
+    @media (max-width:500px) {
+        margin: 0 2rem 0 2rem;
+    }
     `
 export const Title = styled.h3`
     font-weight: bold;
