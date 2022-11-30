@@ -18,7 +18,8 @@ export const Container = styled.div`
     width: 0.5rem;
 }
 .alice-carousel__dots{
-    margin-top: 1rem !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 1rem !important;
 }
 .alice-carousel__dots-item{
     background: var(--white);

@@ -3,39 +3,39 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     background: var(--dark-gray);
-    color: var(--white);
-    img{
-        float: left;
+    text-align: center;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    border: 1px solid red;
+
+    div{
+        display: inline-block;
+        @media (max-width:500px){
+            display: block;
+            padding: 1rem;
+            img{
+                float: left;
+                height: 6rem;
+                width: 6rem;
+            }
+        }
     }
     `
 
 export const Content = styled.div`
-    column-count:2;
-    column-gap: 5rem;
-    width: 60rem;
-    height: auto;
-    margin: auto;
-    margin-left: auto;
-    margin-right: auto;
-    ul{
-        list-style: none;
-    }
-    `
-export const List = styled.div`
-    display: table-cell;
-    padding-top: 2rem;
-    p{
-        padding-left: 2rem;
-        padding-bottom: 1rem;
-        h4{
-            font-size: 1rem;
-            text-decoration: underline;
+    width: 50%;
+    text-align: left;
+    @media (max-width:500px){
+            width:100%;
+            text-align: justify;
         }
-    }
 `
 
-export const Text = styled.div`
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-
+export const Cards = styled.div`
+    padding-left: 1rem;
+    width: 50%;
+    text-align: left;
+    @media (max-width:500px){
+            width:100%;
+        }   
+    
 `
