@@ -6,18 +6,23 @@ export function Header(){
     return(
         <Container>
             <Content>
-                <a href="index.html">
-                <img src={logoImg} alt="Logo SPPARK" />
-                </a>
-                <a className='a-maps' href="https://goo.gl/maps/JHLEazWbzBzWMqSe6">
-                    R. Sebastião Pereira, 31 - Centro, Piedade - SP
-                </a>
-                <br/>
-                <br/>
-                <a className='a-phone' href="tel:+5515991167252">
-                    Tel: (15) 99116-7252
-                </a> 
-                <img src={flagImg} alt="flag" />
+                <div>
+                    <a href="index.html">
+                        <img src={logoImg} alt="Logo SPPARK" />
+                    </a>
+                </div>
+                <div>
+                    <a className='a-maps' href="https://goo.gl/maps/JHLEazWbzBzWMqSe6">
+                        R. Sebastião Pereira, 31 - Centro, Piedade - SP
+                    </a>
+                    <br />
+                    <a className='a-phone' href="tel:+5515991167252">
+                        Tel: (15) 99116-7252
+                    </a> 
+                </div>
+                <div>
+                    <img src={flagImg} alt="flag" />
+                </div>
             </Content>
         </Container>
     )

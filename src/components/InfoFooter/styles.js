@@ -21,7 +21,6 @@ export const Container = styled.div`
 
     @media (max-width:500px){
         justify-content: space-around;
-        margin-left: 1.1rem;
         text-align: right;
         padding-bottom: 0.5rem;
         padding-top: 1rem;

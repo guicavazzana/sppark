@@ -4,9 +4,10 @@ export const Container = styled.header`
     background: var(--black);
     border-bottom: 2px solid;
     border-bottom-color: var(--white);
-`
+    `
 
 export const Content = styled.div`
+    text-align: center;
     max-width: 1120px;
     height: 5.5rem;
     margin: 0 auto;
@@ -37,5 +38,16 @@ export const Content = styled.div`
     }
     .a-phone{
         &:hover {text-decoration: underline};
+    }
+
+    @media (max-width: 500px){
+        justify-content: space-between;
+        img{
+            height: 2.5rem;
+        }
+        a{
+            font-size: 0.5rem;
+        }
+
     }
 `
