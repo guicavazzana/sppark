@@ -15,7 +15,7 @@ export function ContactFooter(){
                 <a href="tel:+5515991167252">
                     <img src={phoneImg} alt="telefone" />
                 </a>
-                <a href="tel:+5515991167252">(15) 99116-7252</a>
+                <a href="tel:+5515997097831">(15) 99709-7831</a>
 
             </div>
             <div className='img-contact'>
@@ -25,7 +25,7 @@ export function ContactFooter(){
                 <a href="https://instagram.com/spparkestacionamento?igshid=ZmRIMzRkMDU=">
                     <img className='img-contact' src={instagramImg} alt="instagram" />
                 </a>
-                <a href="https://api.whatsapp.com/send?phone=5515997097831&text=Ligue+agora+&fbclid=PAAaatvX0XvPgvZZTIwGHXKDLieXNPTHL0Q3KnNP639-JP7u0MXU58_Oo3ftU">
+                <a href="https://api.whatsapp.com/send?phone=5515997097831&text=Olá!+Encotrei+vocês+pela+internet+e+gostaria+de+saber+sobre+&fbclid=PAAaatvX0XvPgvZZTIwGHXKDLieXNPTHL0Q3KnNP639-JP7u0MXU58_Oo3ftU">
                     <img className='img-contact' src={whatsappImg} alt="whatsapp" />
                 </a>
             </div>

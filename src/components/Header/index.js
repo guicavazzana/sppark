@@ -16,8 +16,8 @@ export function Header(){
                         R. Sebastião Pereira, 31 - Centro, Piedade - SP
                     </a>
                     <br />
-                    <a className='a-phone' href="tel:+5515991167252">
-                        Tel: (15) 99116-7252
+                    <a className='a-phone' href="tel:+5515997097831">
+                        Tel: (15) 99709-7831
                     </a> 
                 </div>
                 <div>
