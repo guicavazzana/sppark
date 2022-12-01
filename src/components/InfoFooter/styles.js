@@ -23,6 +23,7 @@ export const Container = styled.div`
         justify-content: space-around;
         margin-left: 1.1rem;
         text-align: right;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        padding-top: 1rem;
     }
 `
