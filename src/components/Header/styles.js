@@ -42,6 +42,7 @@ export const Content = styled.div`
 
     @media (max-width: 500px){
         justify-content: space-between;
+        padding: 0rem 3rem 0rem;
         img{
             height: 2.5rem;
         }
