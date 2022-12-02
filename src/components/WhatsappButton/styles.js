@@ -12,6 +12,10 @@ export const Container = styled.div`
     }
     .MuiFab-colorInherit{
         background-color: green;
-        &:hover {background-color: green}
+        transition: filter 0.2s;
+        &:hover {
+            background-color: green;
+            filter: brightness(0.6);
+        }
     }
     `
