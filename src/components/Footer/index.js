@@ -1,8 +1,7 @@
 import { Container } from './styles'
-
+import { FormContact } from '../FormContact'
 import { InfoFooter } from '../InfoFooter'
 import { ContactFooter } from '../ContactFooter'
-import { FormContact } from '../FormContact'
 
 export function Footer(){
     return (

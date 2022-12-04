@@ -47,7 +47,7 @@ export const Content = styled.div`
             height: 2.5rem;
         }
         a{
-            font-size: 0.5rem;
+            font-size: 1rem;
         }
 
     }

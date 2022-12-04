@@ -1,29 +1,22 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  .button-fale{
-    font-size: 18px;
-    font-weight: bold;
+    .botao-fale{
+    background-color: var(--dark-gray);
+    border: none;
+    border-radius: 5px;
     color: var(--white);
-    form{
-      display: flex;
-      flex-direction: column;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+        transition: filter 0.2s;
+        filter: brightness(0.8);
     }
-  }  
-  `
-  export const styleBox = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: '40%',
-    background: '#4d4d4d',
-    color: '#FAF1F1',
-    border: '2px solid #000',
-    boxShadow: 24,
-    padding: '2rem',
-    display: 'flex',
-    'flex-direction': 'column',
-    height: 'auto',
-
-  };
+}
+    
+`
