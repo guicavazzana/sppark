@@ -6,9 +6,15 @@ import { ContactFooter } from '../ContactFooter'
 export function Footer(){
     return (
         <Container>
+            <div className='info-footer'>
                 <InfoFooter />
+            </div>
+            <div className='form-contact'>
                 <FormContact />
+            </div>
+            <div className='contact-footer'>
                 <ContactFooter />
+            </div>
         </Container>
     )
 }

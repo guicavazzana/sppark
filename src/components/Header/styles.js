@@ -44,6 +44,7 @@ export const Content = styled.div`
         justify-content: space-between;
         padding: 0rem 3rem 0rem;
         img{
+            padding: 0 0.5rem 0 0.5rem;
             height: 2.5rem;
         }
         a{

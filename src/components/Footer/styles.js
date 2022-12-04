@@ -8,5 +8,9 @@ export const Container = styled.footer`
     padding: 0.7rem;
     @media (max-width:500px) {
         display: block;
+        .form-contact{
+            text-align: center;
+            margin: 1.5rem 0 1.5rem 0;
+        }
     }
 `
