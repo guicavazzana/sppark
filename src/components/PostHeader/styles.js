@@ -9,7 +9,10 @@ export const Container = styled.div`
     float: left;
     text-align: center;
     margin: 1rem 0 1rem 0;
-
+    @media (max-width: 500px) {
+        padding: 1rem;
+    }
+    
     p{
         font-size: 24px;
         font-weight: bold;

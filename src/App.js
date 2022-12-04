@@ -7,6 +7,7 @@ import { Motivos } from './components/Motivos'
 import { Footer } from './components/Footer'
 import { Description } from './components/Description'
 import { Copyright } from './components/Copyright'
+import { WhatsappButton } from './components/WhatsappButton'
 
 
 export function App() {
@@ -27,6 +28,8 @@ export function App() {
     <Footer />
 
     <Copyright />
+
+    <WhatsappButton />
 
     <GlobalStyle />
     
