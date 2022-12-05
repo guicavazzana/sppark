@@ -20,8 +20,8 @@ export function FormContact() {
         emailjs.sendForm('service_xxbfl2y', 'template_xjuwfbh' , form.current ,'dR-ZM0kx7NzPRj6rv')
         .then(() => {
             alert('Mensagem enviada!');
-        }, (error) => {
-            alert(error.description);
+        }, () => {
+            alert('Desculpe, um erro ocorreu ao enviar a mensagem');
         });
     };
 
@@ -32,10 +32,8 @@ export function FormContact() {
     };
     
     const handleClose = () => {
-        setOpen(false);
-    };
-    
-
+        setOpen(false)
+      }
 
   return (
     <>

@@ -36,7 +36,9 @@ export const Cards = styled.div`
         margin-right: -0.2rem;
     }
     @media (max-width:500px){
-            width:100%;
-        }   
+        width:100%;
+        img{
+        }
+    }
     
 `
