@@ -9,7 +9,7 @@ export function Label(){
                 <hr />
                 <Cards border title='perfeccionismo' description='Aqui cada detalhe importa e, por isso, nossa limpeza é minuciosa'/>
                 <hr />
-                <Cards title='cuidado' description='Seu veículo está protegido, nós possuímos seguro'/>
+                <Cards title='segurança' description='Seu veículo está protegido, nós possuímos seguro'/>
             </Content>
         </Container>
     )

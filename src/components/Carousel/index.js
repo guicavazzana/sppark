@@ -1,6 +1,6 @@
 import * as React from 'react'
 import fundoImg from '../../images/fundo.jpg'
-import carroImg from '../../images/carro.jpg'
+import introImg from '../../images/SPPARK_Intro.png'
 import carro1Img from '../../images/carro1.jpg'
 import { Container } from './styles'
 import AliceCarousel from 'react-alice-carousel';
@@ -15,13 +15,9 @@ export function CarouselHome(){
       infinite='true'
       disableButtonsControls
       >
-        <img src={carroImg} alt='slide1' className="sliderimg"/>
-        <img src={carro1Img} alt='slide2' className="sliderimg"/>
-        <img src={fundoImg} alt='slide3' className="sliderimg"/>
-        <img src={carroImg} alt='slide4' className="sliderimg"/>
-        <img src={carro1Img} alt='slide5' className="sliderimg"/>
-        <img src={fundoImg} alt='slide6' className="sliderimg"/>
-
+        <img src={introImg} alt='slide1' className="sliderimg"/>
+        <img src={introImg} alt='slide4' className="sliderimg"/>
+        
       </AliceCarousel>
     </Container>
   )

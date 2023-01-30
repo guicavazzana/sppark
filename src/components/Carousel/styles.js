@@ -7,7 +7,7 @@ export const Container = styled.div`
 
 .sliderimg{
     width: 100vw;
-    height: 20rem;  
+    height: auto;  
     display: block;
     object-fit: cover;
 }
