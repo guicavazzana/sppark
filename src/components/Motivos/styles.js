@@ -6,6 +6,9 @@ export const Title = styled.h3`
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
+    @media (max-width:500px){
+        padding: 4rem 0.5rem 0.5rem 0.5rem;
+    }
 `
 
 export const Container = styled.div`

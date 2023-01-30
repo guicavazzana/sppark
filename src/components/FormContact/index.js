@@ -1,92 +1,106 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import Modal from '@mui/material/Modal';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 import { Container } from './styles'
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import { styleBox } from './styles'
-
-export function BasicSelect() {
-    const [tipo, setTipo] = React.useState('');
-  
-    const handleChange = (event) => {
-      setTipo(event.target.value);
-    };
-  
-    return (
-      <Box sx={{ minWidth: 120 }}>
-        <FormControl sx={{minWidth: 180}}>
-          <InputLabel id="demo-simple-select-label">Tipo</InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={tipo}
-            label="Tipo"
-            onChange={handleChange}
-          >
-            <MenuItem value={'informacoes'}>Informações</MenuItem>
-            <MenuItem value={'sugestoes'}>Sugestões</MenuItem>
-            <MenuItem value={'criticas'}>Criticas</MenuItem>
-            <MenuItem value={'elogios'}>Elogios</MenuItem>
-          </Select>
-        </FormControl>
-      </Box>
-    );
-  }
+ 
 
 export function FormContact() {
-    const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    const form = useRef();
 
-    return (
-        <Container>
-            <div>
-                <Button className='button-fale' onClick={handleOpen}
-                sx={{'&:hover': {backgroundColor: '#363636'}}}
-                >
-                  Fale Conosco
-                </Button>
-                <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-                >
-              <div>
-                <Box style={styleBox}>
-                  <div>
-                    <h2>
-                        <u>Fale Conosco!</u> 
-                    </h2>
-                    <br />
-                    <h3>
-                        Envie-nos dúvidas, críticas ou sugestões que entraremos em contato para lhe responder!
-                    </h3>
-                  </div>
-                    <form action="">
-                      <div>
-                        <TextField sx={{mt: 4, mr: 3, minWidth: 250}} id="outlined-basic" label="Nome Completo *" variant="outlined" />
-                        <TextField sx={{mt: 4, minWidth: 250}} id="outlined-basic" label="Email *" variant="outlined" />
-                      </div>
-                      <div>
-                        <TextField sx={{my: 2, minWidth: 250}} id="outlined-basic" label="Telefone *" variant="outlined" />
-                      </div>
-                      <div>
-                        <BasicSelect sx={{minWidth: 250}} />
-                      </div>
-                      <div>
-                        <TextField sx={{mt: 2}} id="outlined-multiline-static" label="Descrição *" variant="outlined" multiline />
-                      </div>
-                    </form>
-                </Box>
-              </div>
-                </Modal>
-            </div>
-        </Container>
-    );
-    }
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_xxbfl2y', 'template_xjuwfbh' , form.current ,'dR-ZM0kx7NzPRj6rv')
+        .then(() => {
+            alert('Mensagem enviada!');
+        }, () => {
+            alert('Desculpe, um erro ocorreu ao enviar a mensagem');
+        });
+    };
+
+    const [open, setOpen] = React.useState(false);
+    
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+    
+    const handleClose = () => {
+        setOpen(false)
+      }
+
+  return (
+    <>
+    <Container>
+      <button variant="text" className='botao-fale' onClick={handleClickOpen}>
+        Fale Conosco
+      </button>
+    </Container>
+      <Dialog open={open} onClose={handleClose}>
+    <form ref={form} onSubmit={sendEmail}>
+        <DialogTitle>Fale Conosco!</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Envie-nos elogios, criticas, sugestões ou dúvidas que entraremos em contato para te atender melhor!
+          </DialogContentText>
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            name='name'
+            label="Nome Completo"
+            type="name"
+            fullWidth
+            variant="standard"
+            required
+        />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="email"
+            name='email'
+            label="Email"
+            type="email"
+            fullWidth
+            variant="standard"
+            required
+        />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="phone"
+            name='phone'
+            label="Telefone"
+            type="phone"
+            fullWidth
+            variant="standard"
+            required
+        />
+          <TextField
+            autoFocus
+            id="descricao"
+            name='description'
+            label="Descrição"
+            margin="dense"
+            multiline
+            maxRows={4}
+            fullWidth
+            variant="standard"
+            required
+            />
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>Cancelar</Button>
+          <Button type='submit' onClick={handleClose}>Enviar</Button>
+        </DialogActions>
+    </form>
+      </Dialog>
+    </>
+  );
+}
